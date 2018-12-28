@@ -1,0 +1,19 @@
+. 编译调试Direct2D
+	(1) 生成
+		clang -l user32.lib -l ole32.lib -l d2d1.lib -o helloengine_d2d.exe helloengine_d2d.cpp
+	(2) 编译
+		clang-cl -c -Z7 -o helloengine_d2d.obj helloengine_d2d.cpp
+	(3) 链接
+		link -debug uer32.lib ole32.lib d2d1.lib helloengine_d2d.obj
+	(4) 使用vs调试
+		devenv helloengine_d2d.exe
+
+2. D3D 编译shader
+	(1) vertex
+		fxc /T vs_5_0 /Zi /Fo copy.vso copy.vs
+	(2) pixel
+		fxc /T ps_5_0 /Zi /Fo copy.pso copy.ps
+
+3. 编译D3D
+	(1) 
+		clang -I./DirectXMath/Inc -l user32.lib -l d3d11.lib -l d3dcompiler.lib -o helloengine_d3d.exe helloengine_d3d.cpp
