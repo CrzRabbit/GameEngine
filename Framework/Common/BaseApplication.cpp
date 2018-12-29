@@ -1,22 +1,22 @@
 #include "BaseApplication.hpp"
 
-int Lark::BaseApplication::Initialize()
+int Neptune::BaseApplication::Initialize()
 {
 	m_bQuit = false;
 	return 0;
 }
 
-void Lark::BaseApplication::Finalize()
+void Neptune::BaseApplication::Finalize()
 {
 
 }
 
-void Lark::BaseApplication::Tick()
+void Neptune::BaseApplication::Tick()
 {
 
 }
 
-bool Lark::BaseApplication::IsQuit()
+bool Neptune::BaseApplication::IsQuit()
 {
 	return m_bQuit;
 }

@@ -1,6 +1,6 @@
 #include "BaseApplication.hpp"
 
-namespace Lark{
+namespace Neptune{
 	BaseApplication g_App;
 	IApplication* g_pApp = &g_App;
 }

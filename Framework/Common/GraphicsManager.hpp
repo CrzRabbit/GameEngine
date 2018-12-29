@@ -1,6 +1,6 @@
 #pragma once
 #include "IRuntimeModule.hpp"
-namespace Lark{
+namespace Neptune{
 
 	class GraphicsManager : implements IRuntimeModule
 	{

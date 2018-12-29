@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "IApplication.hpp"
-using namespace Lark;
-namespace Lark{
+using namespace Neptune;
+namespace Neptune{
 	extern IApplication* g_pApp;
 }
 

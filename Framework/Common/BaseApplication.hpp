@@ -1,7 +1,7 @@
 #pragma once
 #include "IApplication.hpp"
 
-namespace Lark{
+namespace Neptune{
 	class BaseApplication : implements IApplication
 	{
 	public:

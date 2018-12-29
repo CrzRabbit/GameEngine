@@ -2,7 +2,7 @@
 
 #include "Interface.hpp"
 
-namespace Lark{
+namespace Neptune{
 	Interface IRuntimeModule{
 public:
 	virtual ~IRuntimeModule() {};
